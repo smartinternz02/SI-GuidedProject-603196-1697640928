@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Page</title>
+</head>
+<body>
+    <h1>Smoke Detection Prediction</h1>
+    <p>Fill in the details to get a smoke detection prediction:</p>
+
+    <form method="post" action="/submit">
+        <label for="Temperature">Temperature (°C):</label>
+        <input type="number" step="0.01" name="Temperature[C]" required><br>
+
+        <label for="Humidity">Humidity (%):</label>
+        <input type="number" step="0.01" name="Humidity[%]" required><br>
+
+        <label for="TVOC">TVOC (ppb):</label>
+        <input type="number" step="0.01" name="TVOC[ppb]" required><br>
+
+        <label for="Raw H2">Raw H2:</label>
+        <input type="number" step="0.01" name="Raw H2" required><br>
+
+        <label for="Raw Ethanol">Raw Ethanol:</label>
+        <input type="number" step="0.01" name="Raw Ethanol" required><br>
+
+        <label for="Pressure">Pressure (hPa):</label>
+        <input type="number" step="0.01" name="Pressure[hPa]" required><br>
+
+        <label for="NC0.5">NC0.5:</label>
+        <input type="number" step="0.01" name="NC0.5" required><br>
+
+        <label for="CNT">CNT:</label>
+        <input type="number" step="0.01" name="CNT" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
